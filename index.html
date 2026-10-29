@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Registration Page</title>
+<style>
+body{background:lightskyblue}
+form{background:white;width:340px;margin:auto;padding:20px;border-radius:10px}
+</style>
+<script>
+function v(){
+ if(pass.value!=repass.value){alert("Passwords not same");return false}
+ alert("Registered Successfully");return true
+}
+</script>
+</head>
+<body>
+<form onsubmit="return v()">
+<h1>Registration Form</h1>
+
+<label>Firstname</label>
+<input type="text" name="firstname"> <br><br>
+<label>Middlename: </label>
+<input type="text" name="middlename"> <br><br>
+<label>Lastname: </label>
+<input type="text" name="lastname"> <br><br>
+
+<label>Course :</label>
+<select>
+<option>Course</option>
+<option>BCA</option>
+<option>BBA</option>
+<option>B.Tech</option>
+<option>MBA</option>
+<option>MCA</option>
+<option>M.Tech</option>
+</select> <br><br>
+
+<label>Gender :</label>
+<input type="radio" name="Gender" value="male"> Male
+<input type="radio" name="Gender" value="female"> Female
+<input type="radio" name="Gender" value="other"> Other <br><br>
+
+<label>Phone :</label>
+<input type="text" value="+91" size="2">
+<input type="text" size="10"> <br><br>
+
+<label>Address:</label> <br>
+<textarea cols="20" rows="4"></textarea> <br><br>
+
+Email:
+<input type="email" name="email"> <br><br>
+Password:
+<input type="Password" id="pass" name="pass"> <br><br>
+Re-type password:
+<input type="Password" id="repass" name="repass"> <br><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
